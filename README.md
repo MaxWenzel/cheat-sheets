@@ -29,4 +29,11 @@ Alt+Enter | Language Injection
 
 ## Windows
 
+Kill process listening on port:
+
+```bash
+$ netstat -aon | findstr :<port>
+$ Taskkill /PID <pid> /F
+```
+
 ## Shell
