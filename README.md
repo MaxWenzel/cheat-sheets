@@ -33,10 +33,17 @@ Ctrl+W | Mark code
 ## Windows
 
 Kill process listening on port:
-
 ```bash
 $ netstat -aon | findstr :<port>
 $ Taskkill /PID <pid> /F
 ```
+
+Shortcut | Action
+------------ | -------------
+Win+L | Lock screen
+Win+D | show Desktop
+Win+E | start Explorer
+Win+R | Run command
+
 
 ## Shell
