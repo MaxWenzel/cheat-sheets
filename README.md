@@ -26,6 +26,9 @@ Ctrl+E | Last Changes
 Ctrl+Shift+Enter | Complete Statement
 Ctrl+J | Live Template
 Alt+Enter | Language Injection
+Alt+Shift+Up | Move line up
+Alt+Shift+Down | Move line down
+Ctrl+W | Mark code
 
 ## Windows
 
