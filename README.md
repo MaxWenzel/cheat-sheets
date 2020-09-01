@@ -3,6 +3,14 @@ Cheatsheets for developers
 
 ## Git
 
+Checkout new branch:
+```bash
+git fetch
+git pull
+git branch -a | grep <branchName>
+git checkout --track remoteBranchName
+```
+
 ## IntelliJ
 
 Shortcut | Action
