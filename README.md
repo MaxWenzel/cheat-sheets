@@ -16,7 +16,7 @@ Delete all local branches where the remote branches are also deleted:
 git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs -r git branch -d
 ```
 
- -- Delete remote delted branches from local cache
+ Delete remote delted branches from local cache
  ```bash
  git fetch --prune
 ```
