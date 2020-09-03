@@ -11,6 +11,15 @@ git branch -a | grep <branchName>
 git checkout --track remoteBranchName
 ```
 
+Undo a commit and redo
+```bash
+$ git commit -m "Something terribly misguided"             
+$ git reset HEAD~  
+<< edit files as necessary >>    
+$ git add ...                      
+$ git commit -c ORIG_HEAD   
+```
+
 Delete all local branches where the remote branches are also deleted:
 ```bash
 git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs -r git branch -d
