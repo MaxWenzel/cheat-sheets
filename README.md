@@ -30,7 +30,12 @@ git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs -r 
  git fetch --prune
 ```
 
+## Kibana & Elastic
 
+Show all indices:
+```bash
+GET /_cat/indices?h=h,s,i,id,p,r,dc,dd,ss,creation.date.string
+```
 
 ## IntelliJ
 
@@ -68,3 +73,5 @@ Win+R | Run command
 
 
 ## Shell
+
+Use zsh-Shell!
