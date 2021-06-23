@@ -1,6 +1,13 @@
 # cheat-sheets
 Cheatsheets for developers
 
+## Gradle
+
+Force updating all dependencies
+```bash
+./gradlew clean build --no-build-cache --refresh-dependencies
+```
+
 ## Git
 
 Checkout new branch:
