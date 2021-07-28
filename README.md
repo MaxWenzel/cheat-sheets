@@ -1,6 +1,15 @@
 # cheat-sheets
 Cheatsheets for developers
 
+## JVM
+
+Create Heap-dump:
+
+```bash
+jps (or ps aux | grep java)
+jmap -dump:live,format=b,file=/tmp/dump.hprof pid
+```
+
 ## Gradle
 
 Force updating all dependencies
