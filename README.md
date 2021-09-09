@@ -31,7 +31,7 @@ docker-compose pull && docker-compose up -d
 
 Force updating all dependencies
 ```bash
-./gradlew clean build --no-build-cache --refresh-dependencies
+./gradlew clean build --no-build-cache --refresh-dependencies --info
 ```
 
 ## Spring
