@@ -10,11 +10,35 @@ jps (or ps aux | grep java)
 jmap -dump:live,format=b,file=/tmp/dump.hprof pid
 ```
 
+## Docker
+
+Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.
+```bash
+docker system prune -a
+
+docker rmi <imageId>
+```
+
+Update and restart image
+docker-compose pull && docker-compose up -d
+
 ## Gradle
 
 Force updating all dependencies
 ```bash
 ./gradlew clean build --no-build-cache --refresh-dependencies
+```
+
+## Spring
+
+Active Hiberate SQL Logging with Parameters:
+```yaml
+logging:
+  level:
+    org:
+      hibernate:
+        SQL:  DEBUG
+        type.descriptor.sql.BasicBinder: TRACE
 ```
 
 ## Git
