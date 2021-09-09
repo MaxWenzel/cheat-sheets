@@ -20,6 +20,11 @@ docker rmi <imageId>
 ```
 
 Update and restart image
+```bash
+docker-compose pull && docker-compose up -d
+```
+
+Update and restart image
 docker-compose pull && docker-compose up -d
 
 ## Gradle
