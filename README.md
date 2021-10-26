@@ -34,6 +34,12 @@ Force updating all dependencies
 ./gradlew clean build --no-build-cache --refresh-dependencies --info
 ```
 
+Update Gradle wrapper:
+```bash
+./gradlew wrapper --gradle-version 7.2
+ ./gradlew --version
+```
+
 ## Spring
 
 Active Hiberate SQL Logging with Parameters:
