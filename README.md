@@ -24,8 +24,13 @@ Update and restart image
 docker-compose pull && docker-compose up -d
 ```
 
-Update and restart image
-docker-compose pull && docker-compose up -d
+Inspect log files
+```bash
+docker logs -f -n 10 <serviceName>
+
+sudo docker logs <dockerPID> | less
+```
+
 
 ## Gradle
 
