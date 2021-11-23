@@ -31,6 +31,10 @@ docker logs -f -n 10 <serviceName>
 sudo docker logs <dockerPID> | less
 ```
 
+Docker files:
+```bash
+/var/lib/docker/containers/<container_id>/<container_id>-json.log
+```
 
 ## Gradle
 
