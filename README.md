@@ -94,6 +94,11 @@ git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs -r 
 
 - [GitHub Actions](https://github.com/sdras/awesome-actions)
 
+[Github Search](https://github.com/search):
+```
+in:file extension:EXTENSION filename:FILENAME
+```
+
 ## Kibana & Elastic
 
 Show all indices:
