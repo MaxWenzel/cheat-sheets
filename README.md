@@ -90,6 +90,18 @@ git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs -r 
  git fetch --prune
 ```
 
+### Import an existing, unversioned code project
+
+```bash
+git init
+git add --all
+git commit -m "Initial Commit"
+
+git remote add origin https://username@your.bitbucket.domain:7999/yourproject/repo.git 
+git push -u origin master
+```
+
+
 ## Github
 
 - [GitHub Actions](https://github.com/sdras/awesome-actions)
