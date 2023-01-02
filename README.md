@@ -153,6 +153,34 @@ Win+E | start Explorer
 Win+R | Run command
 
 
-## Shell
+## Linux commands
 
 Use zsh-Shell!
+
+### Process
+
+- top
+- atop
+- htop
+- free
+- ps auxw
+- pstree
+- nohup COMMAND &
+- disown <Option> [%Jobnummer] 
+- bg
+- fg
+
+### Usermanagement
+
+- sudo adduser xyz www-data # adds user xyz to group www-data
+- sudo addgroup groupName
+- chmod a+rwx datei # a:all +: add rightd, -: del rights
+- sudo chown -c andreas /media/VERZEICHNIS 
+- chgrp -c -R musik /opt/musik/ 
+
+
+ 
+
+
+
+
