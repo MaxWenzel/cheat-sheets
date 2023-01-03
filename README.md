@@ -190,6 +190,25 @@ Use zsh-Shell!
 - bg
 - fg
 
+## Disc
+ 
+ ```bash
+ fdisk -l
+ mkfs.ntfs /dev/sdb1
+ mkdir /mnt/ntfs
+ mount /dev/sdb1 /mnt/ntfs
+ less /etc/fstab
+ ```
+ 
+```bash
+ # make swap partition
+ dd if=/dev/zero of=swap.img bs=1M count=100
+ mkswap swap.img
+ swapon swap.img
+ cat /proc/swaps
+ swapoff swap.img
+```
+ 
 ### Usermanagement
 
 - sudo adduser xyz www-data # adds user xyz to group www-data
