@@ -178,13 +178,7 @@ Use zsh-Shell!
 - mv
 - cp
 - ls
-- 
 
-## Misc
-
-- uname -a
-- nice
-- clear
 
 ### Process
 
@@ -250,7 +244,12 @@ sudo chmod g+w /home/students
  - curl
  - diff
  
+## Misc
 
+- uname -a
+- nice
+- clear
+- echo
 
 
 
