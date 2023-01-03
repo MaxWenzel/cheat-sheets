@@ -205,12 +205,13 @@ Use zsh-Shell!
  ```
  
 ```bash
- # make swap partition
- dd if=/dev/zero of=swap.img bs=1M count=100
- mkswap swap.img
- swapon swap.img
- cat /proc/swaps
- swapoff swap.img
+# create swap partition with 1GB
+sudo dd if=/dev/zero of=/swap.img bs=1024 count=1048576
+sudo chmod 600 /swap.img
+sudo mkswap /swap.img
+sudo swapon /swap.img
+cat /proc/swaps
+sudo swapoff /swap.img
 ```
  
  - blkid
