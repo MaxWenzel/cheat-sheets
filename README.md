@@ -170,12 +170,21 @@ Use zsh-Shell!
 - find . -name "*.py" -type f 
 - grep -rnw './path/to/search/' -e 'SearchWord'
 - egrep --color "([0-9]{4})-\1" 
+
+## Directory and Files
+
+- mkdir
+- touch
+- mv
+- cp
+- ls
 - 
 
 ## Misc
 
 - uname -a
 - nice
+- clear
 
 ### Process
 
@@ -185,6 +194,7 @@ Use zsh-Shell!
 - free
 - ps auxw
 - pstree
+- jobs
 - nohup COMMAND &
 - disown <Option> [%Jobnummer] 
 - bg
@@ -209,6 +219,11 @@ Use zsh-Shell!
  swapoff swap.img
 ```
  
+ - blkid
+ - lsblk
+ - df -h 
+ - du <options> <location of directory or file>
+ 
 ### Usermanagement
 
 - sudo adduser xyz www-data # adds user xyz to group www-data
@@ -216,7 +231,7 @@ Use zsh-Shell!
 - chmod a+rwx datei # a:all +: add rightd, -: del rights
 - sudo chown -c andreas /media/VERZEICHNIS 
 - chgrp -c -R musik /opt/musik/ 
-
+- id
 
 ```bash
 sudo groupadd students
@@ -226,6 +241,14 @@ sudo chown root:students /home/students
 sudo chmod g+w /home/students
 ```
 
+ ## Tools
+ 
+ - bc
+ - mc
+ - tar
+ - wget
+ - curl
+ - diff
  
 
 
