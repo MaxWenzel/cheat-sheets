@@ -240,7 +240,7 @@ sudo chmod g+w /home/students
  
  - bc
  - mc
- - tar
+ - tar xzf pa5-script.tgz
  - wget
  - curl
  - diff
