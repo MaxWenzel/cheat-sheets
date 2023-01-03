@@ -157,6 +157,21 @@ Win+R | Run command
 
 Use zsh-Shell!
 
+## Files
+
+- sort datei.txt | uniq 
+- echo Maus | tr M H 
+- column
+- cut -d: -f1 /etc/passwd 
+- sed s/Anton/Berta/g Textdatei 
+- vi
+- less 
+- tail -n 10
+
+## Misc
+
+- uname -a
+
 ### Process
 
 - top
@@ -178,6 +193,14 @@ Use zsh-Shell!
 - sudo chown -c andreas /media/VERZEICHNIS 
 - chgrp -c -R musik /opt/musik/ 
 
+
+```bash
+sudo groupadd students
+sudo useradd -m max -G students
+sudo mkdir /home/students
+sudo chown root:students /home/students
+sudo chmod g+w /home/students
+```
 
  
 
