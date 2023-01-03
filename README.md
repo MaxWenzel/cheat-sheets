@@ -175,6 +175,7 @@ Use zsh-Shell!
 ## Misc
 
 - uname -a
+- nice
 
 ### Process
 
