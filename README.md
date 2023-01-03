@@ -252,5 +252,20 @@ sudo chmod g+w /home/students
 - clear
 - echo
 
+ ###  String Operations
+ 
+ |Befehl |Ausgabe |Erklärung|
+|---|---|---|
+|a="wort"; | echo ${a^} |Wort 1. Buchstabe in Großbuchstaben wandeln|
+|a="wort"; | echo ${a^^} |WORT alle Buchstaben in Großbuchstaben wandeln|
+|a="WORT"; | echo ${a,} |wORT 1. Buchstabe in Kleinbuchstaben wandeln|
+|a="WORT"; | echo ${a,,} |wort alle Buchstaben in Kleinbuchstaben wandeln|
+|a="eins:zwei:drei"; | echo ${a%%:*} |eins alles ab erstem „:“ abschneiden (löschen)|
+|a="eins:zwei:drei"; | echo ${a%:*} |eins:zwei alles ab letztem „:“ abschneiden|
+|a="eins:zwei:drei"; | echo ${a#*:} |zwei:drei alles bis zu erstem „:“ abschneiden|
+|a="eins:zwei:drei"; | echo ${a##*:} |drei alles bis zu letztem „:“ abschneiden|
+|a="0123456789"; | echo ${a::4} |0123 Substring; erste 4 Zeichen|
+|a="0123456789"; | echo ${a:2:4} |2345 Substring; ab Position 2; 4 Zeichen|
+|a="0123456789"; | echo ${a:2} |23456789 Substring; alles ab Position 2|
 
 
