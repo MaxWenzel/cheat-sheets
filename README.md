@@ -167,6 +167,10 @@ Use zsh-Shell!
 - vi
 - less 
 - tail -n 10
+- find . -name "*.py" -type f 
+- grep -rnw './path/to/search/' -e 'SearchWord'
+- egrep --color "([0-9]{4})-\1" 
+- 
 
 ## Misc
 
