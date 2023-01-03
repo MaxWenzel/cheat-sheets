@@ -157,7 +157,7 @@ Win+R | Run command
 
 Use zsh-Shell!
 
-## Files
+### Files
 
 - sort datei.txt | uniq 
 - echo Maus | tr M H 
@@ -171,7 +171,7 @@ Use zsh-Shell!
 - grep -rnw './path/to/search/' -e 'SearchWord'
 - egrep --color "([0-9]{4})-\1" 
 
-## Directory and Files
+### Directory and Files
 
 - mkdir
 - touch
@@ -194,7 +194,7 @@ Use zsh-Shell!
 - bg
 - fg
 
-## Disc
+### Disc
  
  ```bash
  fdisk -l
@@ -235,7 +235,7 @@ sudo chown root:students /home/students
 sudo chmod g+w /home/students
 ```
 
- ## Tools
+### Tools
  
  - bc
  - mc
@@ -244,7 +244,7 @@ sudo chmod g+w /home/students
  - curl
  - diff
  
-## Misc
+### Misc
 
 - uname -a
 - nice
