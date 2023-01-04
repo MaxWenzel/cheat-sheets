@@ -159,6 +159,11 @@ Win+D | show Desktop
 Win+E | start Explorer
 Win+R | Run command
 
+## Linux: important directories
+
+- /etc/passwd
+- /etc/fstab
+- /proc/swaps
 
 ## Linux commands
 
@@ -245,7 +250,7 @@ sudo chmod g+w /home/students
 
 ### Tools
  
- - bc
+ - bc -l (ibase=2;obase=10; 10011)
  - mc
  - tar xzf pa5-script.tgz
  - wget
