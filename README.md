@@ -268,4 +268,61 @@ sudo chmod g+w /home/students
 |a="0123456789"; | echo ${a:2:4} |2345 Substring; ab Position 2; 4 Zeichen|
 |a="0123456789"; | echo ${a:2} |23456789 Substring; alles ab Position 2|
 
+### Regex
 
+- egrep --color "([0-9]{4})-\1" 
+- echo "0211/36262" | grep --color -E '...'
+
+#### Basic Syntax
+
+- `/.../`: Start and end regex delimiters
+- `|`: Alternation
+- `()`: Grouping
+
+
+#### Position Matching
+
+- `^`: Start of string or start of line in multi-line mode
+- `\A`: Start of string
+- `$`: End of string or end of line in multi-line mode
+- `\Z`: End of string
+- `\b`: Word boundary
+- `\B`: Not word boundary
+- `\<`: Start of word
+- `\>`: End of word
+
+
+#### Character Classes
+
+- `\s`: Whitespace
+- `\S`: Not whitespace
+- `\w`: Word
+- `\W`: Not word
+- `\d`: Digit
+- `\D`: Not digit
+- `\x`: Hexade­cimal digit
+- `\O`: Octal digit
+
+
+#### Special Characters
+
+- `\n`: Newline
+- `\r`: Carriage return
+- `\t`: Tab
+- `\v`: Vertical tab
+- `\f`: Form feed
+- `\xxx`: Octal character xxx
+- `\xhh`: Hex character hh
+
+
+#### Groups and Ranges
+
+- `.`: Any character except newline (\n)
+- `(a|b)`: a or b
+- `(…)`: Group
+- `(?:…)`: Passive (non-c­apt­uring) group
+- `[abc]`: a, b or c
+- `[^abc]`: Not a, b or c
+- `[a-z]`: Letters from a to z
+- `[A-Z]`: Uppercase letters from A to Z
+- `[0-9]`: Digits from 0 to 9
