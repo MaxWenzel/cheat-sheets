@@ -36,6 +36,13 @@ Docker files:
 /var/lib/docker/containers/<container_id>/<container_id>-json.log
 ```
 
+Misc:
+```bash
+docker run -it -v $PWD:/data --rm debian
+docker exec --it <dockerPID> bash
+docker ps
+```
+
 ## Gradle
 
 Force updating all dependencies
