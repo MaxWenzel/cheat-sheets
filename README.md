@@ -182,6 +182,9 @@ sed -E 's/([^:]*):[^:]*:([^:]*):[^:]*:([^:]*):.*/\1:\2:\3/' /etc/passwd | column
 
 cat /etc/passwd | cut -d":" -f1,3,6 | sort -t":" -k1,1
 cat /etc/passwd | cut -d":" -f1,3,6 | sort -n -t":" -k2,2
+
+# Euro amount
+egrep "^[0-9]+(,[0-9]{1,2}|,-)? EUR$|^EUR [0-9]+(,[0-9]{1,2}|,-)?$"
 ```
 
 
