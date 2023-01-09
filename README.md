@@ -169,6 +169,22 @@ Win+R | Run command
 
 Use zsh-Shell!
 
+### Examples
+
+```bash
+# shutdown
+sudo shutdown -r now
+
+# show column 13,5
+cut -d":" -f 1,3,5 /etc/passwd | column -ts":"^
+# same as above
+sed -E 's/([^:]*):[^:]*:([^:]*):[^:]*:([^:]*):.*/\1:\2:\3/' /etc/passwd | column -ts":"
+
+cat /etc/passwd | cut -d":" -f1,3,6 | sort -t":" -k1,1
+cat /etc/passwd | cut -d":" -f1,3,6 | sort -n -t":" -k2,2
+```
+
+
 ### Files
 
 - sort datei.txt | uniq 
@@ -338,3 +354,5 @@ sudo chmod g+w /home/students
 - `[a-z]`: Letters from a to z
 - `[A-Z]`: Uppercase letters from A to Z
 - `[0-9]`: Digits from 0 to 9
+
+
