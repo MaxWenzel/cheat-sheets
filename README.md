@@ -224,6 +224,7 @@ egrep "^[0-9]+(,[0-9]{1,2}|,-)? EUR$|^EUR [0-9]+(,[0-9]{1,2}|,-)?$"
 - disown <Option> [%Jobnummer] 
 - bg
 - fg
+- echo $$  (show current process)
 
 ### Disc
  
