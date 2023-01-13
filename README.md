@@ -185,6 +185,8 @@ cat /etc/passwd | cut -d":" -f1,3,6 | sort -n -t":" -k2,2
 
 # Euro amount
 egrep "^[0-9]+(,[0-9]{1,2}|,-)? EUR$|^EUR [0-9]+(,[0-9]{1,2}|,-)?$"
+
+cut -d : -f 1,3,6 /etc/passwd | egrep -E '[^:]+:[0-9]+[0,2,4,6,8]:.+' |sort -t : -k 2 -n -u
 ```
 
 
